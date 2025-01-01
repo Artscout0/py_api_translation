@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+transformers
+langdetect
+sentencepiece
+torch
+sacremoses

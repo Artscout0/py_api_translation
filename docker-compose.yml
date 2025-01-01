@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  translation_api:
+    build: ./translation_api
+    container_name: translation_api
+    ports:
+      - "8000:8000"
