@@ -24,3 +24,24 @@ the returned output will be:
 ```
 
 with source text being the original text, source lang being the language of the original message, and translated text being the text translated to the requested language, english by default.
+
+The other functionality of this API is to detect what language is used in a text. 
+
+The request is to be sent to `localhost:8000/detect` with a body formated as follows:
+
+```json
+{
+    "text": "text to translate goes here"
+}
+```
+
+text is the text to be translated, target_lang is the, well, target language.
+
+the returned output will be:
+
+```json
+{
+    "source_text": "text to translate goes here",
+    "source_lang": "en"
+}
+```
